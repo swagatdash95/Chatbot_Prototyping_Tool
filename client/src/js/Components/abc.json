@@ -1,0 +1,42 @@
+{
+	"root":{
+		"type":"Start",
+		"id":1,
+		"text":"",
+		"children":
+		[
+			{
+				"type":"Bot",
+				"id":2,
+				"text":"Hey! How can I help you?",
+				"children":
+				[
+					{
+						"type":"User",
+						"sub-type":"text",
+						"is-NLP":true,
+						"NLP-type":2,
+						"id":3,
+						"children":
+						[
+							{
+								"type":"Bot",
+								"id":4,
+								"entity-found":true,
+								"text":"When do you want to book a flight to <city>",
+								"children":[...]
+							},
+							{
+								"type":"Bot",
+								"id":5,
+								"entity-found":false,
+								"text":"Please enter your source location",
+								"children":[...]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
